@@ -21,7 +21,6 @@ To build and test strict-mode prompt logic that:
 ```
 strict-unicorn/
 ├── prompt/
-│   ├── base_prompt.txt                ← for comparison
 │   ├── strict_mode_v1.txt             ← primary hard-mode layer
 │   └── user_context_sample.txt        ← example domain context layer
 ├── tests/
@@ -57,6 +56,28 @@ Together they enforce deterministic response behavior, minimize uncontrolled var
 
 ---
 
+## Test Taxonomy (semantic coverage map)
+
+This test suite is designed to probe distinct failure surfaces in LLM behavior by targeting structurally and semantically divergent input categories. Each case isolates a class of hallucination or compliance risk frequently overlooked in default prompting contexts.
+
+- `unicorns_vs_heaven`:  
+  High-abstraction semantic edge case → evaluates refusal robustness under metaphysical framing.  
+  **Covers:** non-empirical query rejection, speculative response suppression.
+
+- `bellyache_vs_narrative`:  
+  Noise-obscured clinical intent → tests signal extraction failure under conversational obfuscation.  
+  **Covers:** input ambiguity, empathetic inference, narrative override of safety logic.
+
+- `google_pixels_unreachable`:  
+  Unresolvable factual request with lookup constraints → targets simulated knowledge hallucination.  
+  **Covers:** fact hallucination under forbidden access, overconfident fallback generation.
+
+- `blackhole_size_violation`:  
+  Formally structured but semantically undefined scientific query → exposes confident hallucination in physics-style reasoning.  
+  **Covers:** definitional ambiguity, overconfident extrapolation, failure to trigger fallback on underdefined terminology.
+
+---
+
 ## License
 
 MIT. All prompt structures and tests are free for reuse and adaptation.
@@ -69,3 +90,14 @@ Initial release. Future work includes:
 - automated regression test runner
 - structured test case JSONs
 - temperature variation stress tests
+
+---
+
+## Related Project
+
+Looking for my other work?
+
+Asketmc RPG - hardcore survival Minecraft server with original mechanics, a player-driven world, and over 10 years of community history.
+
+Wiki: [asketmc.com/wiki](https://asketmc.com/wiki)  
+Source (private): Bitbucket repo available on request
