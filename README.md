@@ -6,6 +6,7 @@
 **A framework for deterministic LLM behavior.**
 
 `strict-unicorn` is a strict-mode test suite that suppresses hallucinations, enforces reproducibility, and isolates prompt failures in generative models — built for engineers working on AI reliability at scale.
+
 👉 Try it live in ChatGPT: [Strict Unicorn GPT](https://chatgpt.com/g/g-682b924d021881918f13da0466efea39-strict-unicorn)
 ---
 
@@ -17,6 +18,7 @@ This project combines a hard-mode instruction set for **ChatGPT** (or other inst
 ## 🔧 Quick Start
 👉 Want to skip manual setup?  
 **Run strict-unicorn directly in ChatGPT:** [Strict Unicorn GPT](https://chatgpt.com/g/g-682b924d021881918f13da0466efea39-strict-unicorn)
+
 To run a basic test:
 
 1. Open ChatGPT or another LLM interface.
